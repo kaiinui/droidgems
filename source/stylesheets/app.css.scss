@@ -20,11 +20,19 @@ ul{
   padding-left: 0;
   li{
     font-size: 1.4rem;
-    line-height: 2.5em;
+    line-height: 3rem;
     span{
-      font-size: 1.1rem;
-      margin-left: .4em;
       color: #666;
+    }
+    i{
+      margin-left: .3rem;
+    }
+    .summary{
+      margin-left: .4rem;
+      font-size: 1.1rem;
+    }
+    .star-count{
+      font-size: 1.29rem;
     }
   }
 }
