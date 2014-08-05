@@ -1,7 +1,7 @@
 // COMMON
 
 body{
-  padding: 0 20px;
+  padding: 0 0;
 }
 
 a{
@@ -11,17 +11,19 @@ a{
 // index
 
 h1{
+  margin: 2.8rem 20px;
   font-family: Helvetica;
   font-size: 3.2rem;
   font-weight: 400;
 }
+
 
 ul{
   list-style: none;
   padding-left: 0;
   li{
     font-size: 1.4rem;
-    margin-bottom: 1.8rem;
+    padding: 20px 20px;
     span{
       color: #666;
     }
@@ -29,16 +31,21 @@ ul{
       margin-left: .4rem;
     }
     .summary{
-      margin-left: .4rem;
+      margin-left: .8rem;
       font-size: 1.1rem;
     }
     .star-count{
-      font-size: 1.29rem;
+      margin-left: .4rem;
+      font-size: .9rem;
+      font-weight: 700;
     }
     a.comments{
       font-size: 1rem;
       margin-left: .6rem;
       text-decoration: none;
+    }
+    &.odd{
+      background: #f6f6f6;
     }
   }
 }
