@@ -119,6 +119,9 @@ footer{
     font-size: 1.5rem;
     a{
       text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
     }
     span.star{
       color: white;
@@ -153,5 +156,5 @@ h1.title--gem{
 }
 
 .markdown-body{
-  margin: 20px;
+  margin: 30px;
 }
