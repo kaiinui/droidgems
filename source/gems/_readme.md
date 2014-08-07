@@ -1,7 +1,7 @@
 Butter Knife
 ============
 
-![Logo](website/static/logo.png)
+![Logo](https://github.com/JakeWharton/butterknife/raw/master/website/static/logo.png)
 
 View "injection" library for Android which uses annotation processing to generate boilerplate code
 for you.
