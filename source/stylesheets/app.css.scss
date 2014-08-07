@@ -19,6 +19,7 @@ h1{
 
 
 .libraries{
+  margin-bottom: 0;
   list-style: none;
   padding-left: 0;
   li{
@@ -59,8 +60,8 @@ h1{
     display: table-cell;
     a{
       display: block;
-      padding: 2rem 2rem;
-      font-size: 1.6rem;
+      padding: 2rem 1.6rem;
+      font-size: 2.5rem;
       &.active{
         color: inherit;
         text-decoration: none;

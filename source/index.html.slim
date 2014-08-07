@@ -43,12 +43,12 @@
       span.star-count 783+
       span.summary A powerful image downloading and caching library for Android
       a.comments(href="") 23 comments
-ul.pagination
-  li
-    a.active(href="") 1
-  - (2..5).each do |i|
+  ul.pagination
     li
-      a(href="") = i
-footer
-  div.footer--inner
-    | < What's my name?
+      a.active(href="") 1
+    - (2..5).each do |i|
+      li
+        a(href="") = i
+  footer
+    div.footer--inner
+      | < What's my name?
