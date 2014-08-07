@@ -87,8 +87,12 @@ h3.logo a{
 
 footer{
   height: 200px;
-  background:url(/images/droidkun2001.png) no-repeat bottom left;
   position: relative;
+  img.point{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
   .footer--inner{
     font-size: .95rem;
     font-family: "Helvetica Neue";
