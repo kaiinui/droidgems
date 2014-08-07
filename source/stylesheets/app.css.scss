@@ -150,6 +150,17 @@ h1.title--gem{
   margin: 30px;
 }
 
+.breadcrumb{
+  background: $color-shadow;
+  padding: 10px 20px;
+  margin: 40px 0;
+  font-size: 1.3rem;
+  span{
+    margin-left: .4rem;
+    margin-right: .4rem;
+  }
+}
+
 // FOR Mobile Androids and iPhones
 @media screen and (max-width: 640px) {
   .links{
