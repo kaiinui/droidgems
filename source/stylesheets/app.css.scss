@@ -10,6 +10,19 @@ a{
   color: blue;
 }
 
+// COMMON
+
+.star{
+  color: white;
+  font-weight: 400;
+  font-size: .8rem;
+  margin-left: .8rem;
+  background: #aaa;
+  border-radius: 3px;
+  padding: 3px 5px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
 // index
 
 header h1.logo{
@@ -40,20 +53,10 @@ h3.logo a{
   li{
     font-size: 1.4rem;
     padding: 20px 20px;
-    span{
-      color: #666;
-    }
-    i{
-      margin-left: .8rem;
-    }
     .summary{
+      color: #666;
       margin-left: .6rem;
       font-size: 1.1rem;
-    }
-    .star-count{
-      margin-left: .6rem;
-      font-size: .9rem;
-      font-weight: 700;
     }
     a.comments{
       font-size: 1rem;
@@ -104,6 +107,37 @@ footer{
 
 // gems/show
 
+.box--links{
+  margin: 20px;
+  padding: 10px 20px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.links{
+  li{
+    font-size: 1.5rem;
+    a{
+      text-decoration: none;
+    }
+    span.star{
+      color: white;
+      font-weight: 400;
+      font-size: .8rem;
+      margin-left: .8rem;
+      background: #aaa;
+      border-radius: 3px;
+      padding: 3px 5px;
+      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    span.date{
+      margin-left: .6rem;
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+}
+
 h1.title--gem{
   background: $color-shadow;
   padding: 2.3rem 20px;
@@ -119,5 +153,5 @@ h1.title--gem{
 }
 
 .markdown-body{
-  margin: 30px;
+  margin: 20px;
 }
