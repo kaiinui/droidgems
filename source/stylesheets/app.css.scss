@@ -150,6 +150,7 @@ h1.title--gem{
   margin: 30px;
 }
 
+// FOR Mobile Androids and iPhones
 @media screen and (max-width: 640px) {
   .links{
     list-style: none;
@@ -162,5 +163,15 @@ h1.title--gem{
   .markdown-body{
     margin-left: 20px;
     margin-right: 20px;
+  }
+  footer{
+    height: 150px;
+    .point{
+      width: 150px;
+      height: 150px;
+    }
+    .footer--inner{
+      left: 150px;
+    }
   }
 }
