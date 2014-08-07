@@ -8,4 +8,10 @@ html
     = stylesheet_link_tag "normalize", "app"
     = javascript_include_tag  "all"
   body(class=page_classes)
-    = yield
+    .container
+      h1
+        | Droid Gems
+      = yield
+      footer
+          div.footer--inner
+            | < What's my name?
