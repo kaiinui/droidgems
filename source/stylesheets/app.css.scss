@@ -18,7 +18,7 @@ h1{
 }
 
 
-ul{
+.libraries{
   list-style: none;
   padding-left: 0;
   li{
@@ -50,8 +50,27 @@ ul{
   }
 }
 
+.pagination{
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  display: table;
+  li{
+    display: table-cell;
+    a{
+      display: block;
+      padding: 2rem 2rem;
+      font-size: 1.6rem;
+      &.active{
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 footer{
-  height: 230px;
+  height: 200px;
   background:url(/images/droidkun2001.png) no-repeat bottom left;
   position: relative;
   .footer--inner{
