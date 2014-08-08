@@ -12,6 +12,8 @@ $color-900: #004d40;
 
 $color-link: #0277bb;
 
+$color-weak: #666;
+
 // COMMON
 
 body{
@@ -163,6 +165,10 @@ h3.mt-header{
   font-size: 1.2em;
 }
 
+.pure-g .mt-card{
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
 
 .mt-card{
   margin: 20px;
@@ -173,15 +179,42 @@ h3.mt-header{
     border-radius: 4px;
   }
   .mt-card-heading{
+    margin: 0;
+    font-weight: 200;
+    padding: 10px 10px;
     &.backgrounded{
-      margin: 0;
       background-color: $color-300;
       padding: 15px 15px;
-      font-weight: 200;
     }
   }
   .mt-card-body{
     padding: 10px 20px;
+  }
+  &.richmedia{
+    padding-left: 150px;
+    position: relative;
+    .mt-card-richmedia{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 200px;
+      z-index: -1;
+    }
+    .mt-card-body{
+      background: white;
+      height: 200px;
+      margin: 0;
+      padding: 0;
+      box-shadow: -10px 0 10px -10px #333;
+      .mt-card-heading{
+        padding-bottom: 0px;
+      }
+      p{
+        color: $color-weak;
+        padding-left: 10px;
+      }
+    }
   }
 }
 
@@ -191,10 +224,6 @@ h3.mt-header{
   .links{
     list-style: none;
     padding-left: 0;
-  }
-  .mt-card{
-    margin-left: 10px;
-    margin-right: 10px;
   }
   .markdown-body{
     margin-left: 20px;
@@ -210,4 +239,25 @@ h3.mt-header{
       left: 150px;
     }
   }
+}
+
+
+@media screen and (max-width: 640px) {
+  .mt-card{
+    margin-left: 10px;
+    margin-right: 10px;
+    &.richmedia{
+      height: 150px;
+      padding-left: 120px;
+      .mt-card-richmedia{
+        float: right;
+        width: 150px;
+        height: 150px;
+      }
+      .mt-card-body{
+        height: 150px;
+      }
+    }
+  }
+
 }
