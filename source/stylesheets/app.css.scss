@@ -1,5 +1,17 @@
 $color-shadow: #f6f6f6;
 
+$color-100: #b2dfdb;
+$color-200: #80cbc4;
+$color-300: #4db6ac;
+$color-400: #26a69a;
+$color-500: #009688;
+$color-600: #00897b;
+$color-700: #00796b;
+$color-800: #00695c;
+$color-900: #004d40;
+
+$color-link: #0277bb;
+
 // COMMON
 
 body{
@@ -7,7 +19,7 @@ body{
 }
 
 a{
-  color: blue;
+  color: $color-link;
 }
 
 // COMMON
@@ -25,15 +37,11 @@ a{
 
 // index
 
-header h1.logo{
-  margin: 2.3rem 20px;
-  font-family: Helvetica;
-  font-size: 3.2rem;
-  font-weight: 400;
-}
-
 h3.logo{
-  margin: 20px 20px;
+  margin: 0;
+  background: $color-500;
+  color: white;
+  padding: 20px 20px 0px 20px;
   font-size: 1.2em;
   font-weight: 400;
   font-family: Helvetica;
@@ -108,10 +116,6 @@ footer{
 // gems/show
 
 .box--links{
-  margin: 20px;
-  padding: 10px 20px;
-  background: #fafafa;
-  border-bottom: 1px solid #eee;
 }
 
 .links{
@@ -131,36 +135,65 @@ footer{
     }
   }
 }
+.markdown-body{
+  margin: 30px;
+}
 
-h1.title--gem{
-  background: $color-shadow;
+.breadcrumb{
+  background: $color-500;
+  padding: 10px 20px;
+  margin: 40px 0;
+  font-size: 1.3rem;
+  a{
+    color: white;
+  }
+  span{
+    color: #ccc;
+    margin-left: .4rem;
+    margin-right: .4rem;
+  }
+}
+
+
+// COMPONENTS
+
+.mt-header{
+  background: $color-500;
+  color: white;
   padding: 2.3rem 20px;
   margin: 0;
   margin-bottom: 20px;
   font-family: Helvetica;
   font-size: 3.2rem;
-  font-weight: 400;
+  font-weight: 100;
   a{
     color: inherit;
     text-decoration: none;
   }
 }
 
-.markdown-body{
-  margin: 30px;
-}
-
-.breadcrumb{
-  background: $color-shadow;
-  padding: 10px 20px;
-  margin: 40px 0;
-  font-size: 1.3rem;
-  span{
-    color: #999;
-    margin-left: .4rem;
-    margin-right: .4rem;
+.mt-card{
+  margin: 20px;
+  padding: 0;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.26);
+  border: 1px solid #ccc;
+  &.rounded{
+    border-radius: 4px;
+  }
+  .mt-card-heading{
+    &.backgrounded{
+      margin: 0;
+      background-color: $color-300;
+      padding: 10px 10px;
+      font-weight: 200;
+    }
+  }
+  .mt-card-body{
+    padding: 10px 20px;
   }
 }
+
+
 
 // FOR Mobile Androids and iPhones
 @media screen and (max-width: 640px) {
@@ -168,9 +201,9 @@ h1.title--gem{
     list-style: none;
     padding-left: 0;
   }
-  .box--links{
-    margin-left: 0;
-    margin-right: 0;
+  .mt-card{
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .markdown-body{
     margin-left: 20px;
