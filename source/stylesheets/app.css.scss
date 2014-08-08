@@ -207,12 +207,11 @@ h3.mt-header{
       margin: 0;
       padding: 0;
       box-shadow: -10px 0 10px -10px #333;
-      .mt-card-heading{
-        padding-bottom: 0px;
-      }
       p{
+        margin: 0;
         color: $color-weak;
         padding-left: 10px;
+        padding-right: 10px;
       }
     }
   }
