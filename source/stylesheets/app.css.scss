@@ -11,6 +11,7 @@ $color-800: #00695c;
 $color-900: #004d40;
 
 $color-link: #0277bb;
+$color-link-hover: #01476f;
 
 $color-weak: #666;
 
@@ -22,6 +23,12 @@ body{
 
 a{
   color: $color-link;
+  -webkit-transition: color .1s linear;
+  -moz-transition: color .1s linear;
+  transition: color .1s linear;
+  &:hover{
+    color: $color-link-hover;
+  }
 }
 
 // COMMON
