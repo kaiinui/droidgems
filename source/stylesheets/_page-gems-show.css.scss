@@ -7,7 +7,7 @@
     padding-left: 0;
   }
   li{
-    font-size: 1.5rem;
+    font-size: $font-size-600;
     line-height: 2.4rem;
     span.date{
       margin-left: .6rem;
@@ -18,9 +18,9 @@
 }
 
 .markdown-body{
-  margin: 30px;
+  margin: $margin-horizontal__desktop;
   @media #{$media-mobile} {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: $margin-horizontal__mobile;
+    margin-right: $margin-horizontal__mobile;
   }
 }
