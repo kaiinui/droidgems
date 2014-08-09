@@ -14,10 +14,12 @@
     text-decoration: none;
   }
 }
+
 h1.mt-header{
   font-size: 3.2rem;
   padding: 2.3rem 20px;
 }
+
 h3.mt-header{
   margin: 0;
   padding: 20px 20px 0px 20px;
@@ -82,7 +84,7 @@ h3.mt-header{
       margin: 0;
       padding: 0;
       box-shadow: -10px 0 10px -10px #333; // Left only shadow
-      p{
+      p{ // [REFACTOR] too deep. want to refactor.
         margin: 0;
         color: $color-weak;
         padding-left: 10px;
