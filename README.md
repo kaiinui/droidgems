@@ -3,6 +3,10 @@ droidgems
 
 An awesome libraries for Android development.
 
+![](https://dl.dropboxusercontent.com/u/7817937/_github/droidgems/SS/1407589588.png)
+
+![](https://dl.dropboxusercontent.com/u/7817937/_github/droidgems/SS/1407589600.png)
+
 Designdoc
 ===
 
