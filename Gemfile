@@ -11,3 +11,7 @@ gem "middleman-slim"
 gem 'rouge', github: "totocaster/rouge"
 gem 'redcarpet'
 gem 'middleman-syntax'
+
+gem 'middleman-s3_sync'
+gem 'middleman-minify-html'
+gem 'middleman-inliner'

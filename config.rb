@@ -64,20 +64,26 @@ set :markdown,
 set :markdown_engine, :redcarpet
 activate :syntax
 
+
+activate :inliner
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_html
+  activate :minify_css
+  activate :minify_javascript
+  #activate :asset_hash
 
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
+  activate :gzip
   # Use relative URLs
   # activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'droidgems'
+  s3_sync.region                     = 'ap-northeast-1'
 end
