@@ -42,3 +42,33 @@
     margin-right: .4rem;
   }
 }
+
+footer{
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  @media #{$media-mobile} {
+    height: 150px;
+  }
+  .point{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    @media #{$media-mobile} {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .footer--inner{
+    font-size: .95rem;
+    font-family: "Helvetica Neue";
+    position: absolute;
+    bottom: 0.8rem;
+    left: 200px;
+    @media #{$media-mobile} {
+      left: 150px;
+    }
+  }
+}

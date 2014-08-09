@@ -1,0 +1,26 @@
+// Styles for gems#show
+// @author kaiinui
+
+.links{
+  @media #{$media-mobile} {
+    list-style: none;
+    padding-left: 0;
+  }
+  li{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    span.date{
+      margin-left: .6rem;
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+}
+
+.markdown-body{
+  margin: 30px;
+  @media #{$media-mobile} {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

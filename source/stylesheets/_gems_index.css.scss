@@ -1,0 +1,25 @@
+// Styles for gems#index
+// @author kaiinui
+
+.libraries{
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+  li{
+    font-size: 1.4rem;
+    padding: 20px 20px;
+    .summary{
+      color: #666;
+      margin-left: .6rem;
+      font-size: 1.1rem;
+    }
+    a.comments{
+      font-size: 1rem;
+      margin-left: .6rem;
+      text-decoration: none;
+    }
+    &.odd{
+      background: $color-shadow;
+    }
+  }
+}
