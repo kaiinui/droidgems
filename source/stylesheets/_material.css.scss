@@ -1,0 +1,95 @@
+// pseudo Material Design Components
+// @author kaiinui
+
+.mt-header{
+  background: $color-500;
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: Helvetica;
+  font-weight: 100;
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+}
+h1.mt-header{
+  font-size: 3.2rem;
+  padding: 2.3rem 20px;
+}
+h3.mt-header{
+  margin: 0;
+  padding: 20px 20px 0px 20px;
+  font-size: 1.2em;
+}
+
+.pure-g .mt-card{
+  margin: 10px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.mt-card{
+  margin: 20px;
+  padding: 0;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.26);
+  border: 1px solid #ccc;
+  @media #{$media-mobile} {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  &.rounded{
+    border-radius: 4px;
+  }
+
+  .mt-card-heading{
+    margin: 0;
+    font-weight: 200;
+    padding: 10px 10px;
+    &.backgrounded{
+      background-color: $color-300;
+      padding: 15px 15px;
+    }
+  }
+  .mt-card-body{
+    padding: 10px 20px;
+  }
+
+  &.richmedia{
+    padding-left: 150px;
+    position: relative;
+    @media #{$media-mobile} {
+      height: 150px;
+      padding-left: 120px;
+    }
+    .mt-card-richmedia{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 200px;
+      z-index: -1;
+      @media #{$media-mobile} {
+        float: right;
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .mt-card-body{
+      background: white;
+      height: 200px;
+      margin: 0;
+      padding: 0;
+      box-shadow: -10px 0 10px -10px #333; // Left only shadow
+      p{
+        margin: 0;
+        color: $color-weak;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      @media #{$media-mobile} {
+        height: 150px;
+      }
+    }
+  }
+}
