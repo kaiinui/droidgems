@@ -15,6 +15,8 @@ $color-link-hover: #01476f;
 
 $color-weak: #666;
 
+$media-mobile: "screen and (max-width: 640px)";
+
 // COMMON
 
 body{
@@ -302,7 +304,7 @@ h3.mt-header{
 }
 
 
-@media screen and (max-width: 640px) {
+@media #{$media-mobile} {
   .mt-card{
     margin-left: 10px;
     margin-right: 10px;
@@ -319,5 +321,4 @@ h3.mt-header{
       }
     }
   }
-
 }
