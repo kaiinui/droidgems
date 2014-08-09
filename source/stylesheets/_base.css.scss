@@ -7,9 +7,7 @@ body{
 
 a{
   color: $color-link;
-  -webkit-transition: color .1s linear;
-  -moz-transition: color .1s linear;
-  transition: color .1s linear;
+  @include prefixed-transition(color .1s linear);
   &:hover{
     color: $color-link-hover;
   }
