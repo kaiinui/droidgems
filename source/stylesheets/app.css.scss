@@ -1,53 +1,8 @@
-$color-shadow: #f6f6f6;
-
-$color-100: #b2dfdb;
-$color-200: #80cbc4;
-$color-300: #4db6ac;
-$color-400: #26a69a;
-$color-500: #009688;
-$color-600: #00897b;
-$color-700: #00796b;
-$color-800: #00695c;
-$color-900: #004d40;
-
-$color-link: #0277bb;
-$color-link-hover: #01476f;
-
-$color-weak: #666;
-
-$media-mobile: "screen and (max-width: 640px)";
-
-// COMMON
-
-body{
-  padding: 0 0;
-}
-
-a{
-  color: $color-link;
-  -webkit-transition: color .1s linear;
-  -moz-transition: color .1s linear;
-  transition: color .1s linear;
-  &:hover{
-    color: $color-link-hover;
-  }
-}
-
-// COMMON
-
-.star{
-  color: white;
-  font-weight: 400;
-  font-size: .8rem;
-  margin-left: .8rem;
-  background: #aaa;
-  border-radius: 3px;
-  padding: 3px 5px;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
-}
+@import "variables";
+@import "base";
+@import "components";
 
 // index
-
 
 .libraries{
   margin-bottom: 0;
@@ -72,43 +27,23 @@ a{
   }
 }
 
-.pagination{
-  margin: 0 auto;
-  list-style: none;
-  padding-left: 0;
-  display: table;
-  li{
-    display: table-cell;
-    a{
-      display: block;
-      padding: 2.8rem 1.2rem;
-      font-size: 2.2rem;
-      &.active{
-        color: inherit;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
 footer{
   height: 200px;
   position: relative;
   overflow: hidden;
   @media #{$media-mobile} {
     height: 150px;
-    .point{
-      width: 150px;
-      height: 150px;
-    }
-    .footer--inner{
-      left: 150px;
-    }
   }
-  img.point{
+  .point{
     position: absolute;
     left: 0;
     bottom: 0;
+    width: 200px;
+    height: 200px;
+    @media #{$media-mobile} {
+      width: 150px;
+      height: 150px;
+    }
   }
   .footer--inner{
     font-size: .95rem;
@@ -116,6 +51,9 @@ footer{
     position: absolute;
     bottom: 0.8rem;
     left: 200px;
+    @media #{$media-mobile} {
+      left: 150px;
+    }
   }
 }
 
@@ -132,12 +70,6 @@ footer{
   li{
     font-size: 1.5rem;
     line-height: 2.4rem;
-    a{
-      text-decoration: none;
-      &:hover{
-        text-decoration: underline;
-      }
-    }
     span.date{
       margin-left: .6rem;
       font-size: 1rem;
@@ -145,6 +77,7 @@ footer{
     }
   }
 }
+
 .markdown-body{
   margin: 30px;
   @media #{$media-mobile} {
@@ -153,20 +86,6 @@ footer{
   }
 }
 
-.breadcrumb{
-  background: $color-500;
-  padding: 10px 20px;
-  margin: 40px 0;
-  font-size: 1.5rem;
-  a{
-    color: white;
-  }
-  span{
-    color: #ccc;
-    margin-left: .4rem;
-    margin-right: .4rem;
-  }
-}
 
 @import "material";
 @import "animation";
