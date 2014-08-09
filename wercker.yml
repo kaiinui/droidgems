@@ -1,0 +1,26 @@
+box: wercker/rvm
+# Build definition
+build:
+    # The steps that will be executed on build
+    # See the Ruby section on the wercker devcenter:
+    # http://devcenter.wercker.com/articles/languages/ruby.html
+    steps:
+        # Uncomment this to force RVM to use a specific Ruby version
+        # - rvm-use:
+        #       version: 2.1.0
+
+        # A step that executes `bundle install` command
+        - bundle-install
+deploy:
+    steps:
+        - bundle-install
+        - script:
+            name: deploy
+            code: |
+                bundle exec middleman build
+                bundle exec middleman s3_sync
+
+        # Add more steps here:
+        # - script:
+        #    name: rspec
+        #    code: bundle exec rspec

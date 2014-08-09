@@ -15,3 +15,5 @@ gem 'middleman-syntax'
 gem 'middleman-s3_sync'
 gem 'middleman-minify-html'
 gem 'middleman-inliner'
+
+gem 'i18n', '0.6.9'
