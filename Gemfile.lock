@@ -95,7 +95,7 @@ GEM
       rack-test (~> 0.6.2)
       thor (>= 0.15.2, < 2.0)
       tilt (~> 1.4.1, < 2.0)
-    middleman-inliner (1.0.2)
+    middleman-inliner (1.0.1)
     middleman-livereload (3.1.1)
       em-websocket (>= 0.2.0)
       middleman-core (>= 3.0.2)
@@ -184,7 +184,7 @@ PLATFORMS
 DEPENDENCIES
   i18n (= 0.6.9)
   middleman (~> 3.3.3)
-  middleman-inliner
+  middleman-inliner (= 1.0.1)
   middleman-livereload (~> 3.1.0)
   middleman-minify-html
   middleman-s3_sync
