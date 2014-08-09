@@ -9,9 +9,9 @@
   li{
     font-size: $font-size-600;
     line-height: 2.4rem;
-    span.date{
+    .date{
       margin-left: .6rem;
-      font-size: 1rem;
+      font-size: $font-size-300;
       color: #666;
     }
   }

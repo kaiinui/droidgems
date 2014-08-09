@@ -1,7 +1,7 @@
 .star{ // [FIXME] label?
   color: white;
   font-weight: 400;
-  font-size: .8rem;
+  font-size: $font-size-50;
   margin-left: .8rem;
   background: #aaa;
   border-radius: 3px;
@@ -19,7 +19,7 @@
     a{
       display: block;
       padding: 2.8rem 1.2rem;
-      font-size: 2.2rem;
+      font-size: $font-size-800;
       &.active{
         color: inherit;
         text-decoration: none;
@@ -32,43 +32,45 @@
   background: $color-500;
   padding: 10px 20px;
   margin: 40px 0;
-  font-size: 1.5rem;
+  font-size: $font-size-600;
   a{
     color: white;
   }
   span{
-    color: #ccc;
+    color: $color-weakest;
     margin-left: .4rem;
     margin-right: .4rem;
   }
 }
 
+$size-footer-droid__desktop: 200px;
+$size-footer-droid__mobile: 150px;
 footer{
-  height: 200px;
+  height: $size-footer-droid__desktop;
   position: relative;
   overflow: hidden;
   @media #{$media-mobile} {
-    height: 150px;
+    height: $size-footer-droid__mobile;
   }
   .point{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 200px;
-    height: 200px;
+    width: $size-footer-droid__desktop;
+    height: $size-footer-droid__desktop;
     @media #{$media-mobile} {
-      width: 150px;
-      height: 150px;
+      width: $size-footer-droid__mobile;
+      height: $size-footer-droid__mobile;
     }
   }
   .footer--inner{
-    font-size: .95rem;
+    font-size: $font-size-200;
     font-family: "Helvetica Neue";
     position: absolute;
     bottom: 0.8rem;
-    left: 200px;
+    left: $size-footer-droid__desktop;
     @media #{$media-mobile} {
-      left: 150px;
+      left: $size-footer-droid__mobile;
     }
   }
 }
