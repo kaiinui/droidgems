@@ -1,5 +1,7 @@
-droidgems
+[WIP] droidgems
 =========
+
+http://droidgems.com/
 
 An awesome libraries for Android development.
 
