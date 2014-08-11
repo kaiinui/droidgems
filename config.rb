@@ -84,6 +84,6 @@ configure :build do
 end
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'droidgems'
+  s3_sync.bucket                     = 'droidgems.com'
   s3_sync.region                     = 'ap-northeast-1'
 end
